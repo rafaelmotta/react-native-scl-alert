@@ -23,13 +23,13 @@ or just check the images bellow:
 
 <p align="center">
   <img      src="https://raw.githubusercontent.com/rafaelmotta/react-native-scl-alert/master/demo-1.jpeg" 
-    height="550" 
+    height="500" 
   />
   <img      src="https://raw.githubusercontent.com/rafaelmotta/react-native-scl-alert/master/demo-2.jpeg" 
-    height="550" 
+    height="500" 
   />
   <img      src="https://raw.githubusercontent.com/rafaelmotta/react-native-scl-alert/master/demo-3.jpeg" 
-    height="550" 
+    height="500" 
   />
 </p>
 
@@ -82,13 +82,13 @@ export default class App extends React.Component {
         <Alert
           show={this.state.show}
           onRequestClose={this.handleClose}
-          theme="success"
-          title="Congratulations"
-          subtitle="You've just displayed this awesome Pop Up View"
-          iconComponent={<Ionicons name="md-checkmark-circle" size={32} color="white" />}
+          theme="info"
+          title="Info"
+          subtitle="You can setup the colors using the theme prop"
+          iconComponent={<Ionicons name="ios-thumbs-up" size={32} color="white" />}
         >
-          <AlertButton theme="success" onPress={this.handleClose}>Second Button</AlertButton>
-          <AlertButton theme="danger" onPress={this.handleClose}>Second Button</AlertButton>
+          <AlertButton theme="info" onPress={this.handleClose}>Done</AlertButton>
+          <AlertButton theme="default" onPress={this.handleClose}>Cancel</AlertButton>
         </Alert>
       </View>
     );
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-}); 
+});
 ```
 
 ## Demo
