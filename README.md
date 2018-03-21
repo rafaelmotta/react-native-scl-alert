@@ -85,7 +85,7 @@ export default class App extends React.Component {
           theme="info"
           title="Info"
           subtitle="You can setup the colors using the theme prop"
-          iconComponent={<Ionicons name="ios-thumbs-up" size={32} color="white" />}
+          headerIconComponent={<Ionicons name="ios-thumbs-up" size={32} color="white" />}
         >
           <SCLAlertButton theme="info" onPress={this.handleClose}>Done</SCLAlertButton>
           <SCLAlertButton theme="default" onPress={this.handleClose}>Cancel</SCLAlertButton>

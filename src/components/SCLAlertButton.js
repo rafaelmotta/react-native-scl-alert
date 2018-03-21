@@ -5,12 +5,9 @@ import {
   View,
   ViewPropTypes,
   StyleSheet,
-  Text
+  Text,
+  TouchableOpacity
 } from 'react-native'
-
-import {
-  Touch
-} from './'
 
 import variables from '../config/variables'
 
@@ -40,32 +37,30 @@ function SCLAlertButton (props) {
   const childrenType = typeof props.children
 
   return (
-    <View>
-      <Touch onPress={props.onPress}>
-        <View
-          style={[
-            styles.container,
-            { backgroundColor: variables[`${props.theme}Background`] },
-            props.containerStyle
-          ]}
-        >
-          {childrenType === 'string' && (
-            <Text
-              style={[
-                styles.text,
-                { color: variables[`${props.theme}Color`] },
-                props.textStyle
-              ]}
-            >
-              {props.children}
-            </Text>
-          )}
-          {childrenType === 'object' && (
-            <View>{props.children}</View>
-          )}
-        </View>
-      </Touch>
-    </View>
+    <TouchableOpacity activeOpacity={0.8} onPress={props.onPress}>
+      <View
+        style={[
+          styles.container,
+          { backgroundColor: variables[`${props.theme}Background`] },
+          props.containerStyle
+        ]}
+      >
+        {childrenType === 'string' && (
+          <Text
+            style={[
+              styles.text,
+              { color: variables[`${props.theme}Color`] },
+              props.textStyle
+            ]}
+          >
+            {props.children}
+          </Text>
+        )}
+        {childrenType === 'object' && (
+          <View>{props.children}</View>
+        )}
+      </View>
+    </TouchableOpacity>
   )
 }
 

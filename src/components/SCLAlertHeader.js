@@ -50,8 +50,9 @@ function SCLAlertHeader (props) {
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
-    top: variables.headerCircleSize / -2,
-    left: (variables.contentWidth / 2) - (variables.headerCircleSize / 2)
+    zIndex: 150,
+    top: 0,
+    left: (variables.contentWidth / 2) - (variables.gutter / 2)
   },
   inner: {
     width: variables.headerCircleSize,

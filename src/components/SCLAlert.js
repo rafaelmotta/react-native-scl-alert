@@ -58,7 +58,7 @@ class SCLAlert extends React.Component {
   get interpolationTranslate () {
     const move = this.slideAnimation.interpolate({
       inputRange: [0, 1],
-      outputRange: [height, height / -3.5]
+      outputRange: [height, height / -5]
     })
 
     return [{ translateY: move }]
@@ -127,10 +127,10 @@ class SCLAlert extends React.Component {
               { transform: this.interpolationTranslate }
             ]}
           >
+            <SCLAlertHeader
+              {...this.props}
+            />
             <View style={styles.innerContent}>
-              <SCLAlertHeader
-                {...this.props}
-              />
               <SCLAlertTitle
                 {...this.props}
               />
@@ -163,7 +163,9 @@ const styles = StyleSheet.create({
   contentContainer: {
     zIndex: 150,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    padding: 50,
+    position: 'relative'
   },
   innerContent: {
     padding: variables.gutter,
