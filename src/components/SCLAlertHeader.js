@@ -14,21 +14,21 @@ import {
   defaultThemeType
 } from '../config/types'
 
-AlertHeader.propTypes = {
+SCLAlertHeader.propTypes = {
   headerContainerStyles: ViewPropTypes.style,
   headerInnerStyles: ViewPropTypes.style,
   theme: themeType,
   headerIconComponent: PropTypes.node
 }
 
-AlertHeader.defaultProps = {
+SCLAlertHeader.defaultProps = {
   headerContainerStyles: {},
   headerInnerStyles: {},
   theme: defaultThemeType,
   headerIconComponent: null
 }
 
-function AlertHeader (props) {
+function SCLAlertHeader (props) {
   return (
     <View style={[
       styles.container,
@@ -64,4 +64,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default AlertHeader
+export default SCLAlertHeader

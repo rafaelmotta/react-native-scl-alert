@@ -10,18 +10,18 @@ import {
 
 import variables from '../config/variables'
 
-AlertTitle.propTypes = {
+SCLAlertTitle.propTypes = {
   title: PropTypes.string.isRequired,
   titleContainerStyle: ViewPropTypes.style,
   titleStyle: Text.propTypes.style
 }
 
-AlertTitle.defaultProps = {
+SCLAlertTitle.defaultProps = {
   titleContainerStyle: {},
   titleStyle: {}
 }
 
-function AlertTitle (props) {
+function SCLAlertTitle (props) {
   return (
     <View
       style={[
@@ -56,4 +56,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default AlertTitle
+export default SCLAlertTitle

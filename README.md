@@ -53,8 +53,8 @@ import {
 } from 'react-native';
 
 import {
-  Alert,
-  AlertButton
+  SCLAlert,
+  SCLAlertButton
 } from 'react-native-scl-alert'
 
 import { 
@@ -79,7 +79,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Button title="Show" onPress={this.handleOpen} />
-        <Alert
+        <SCLAlert
           show={this.state.show}
           onRequestClose={this.handleClose}
           theme="info"
@@ -87,9 +87,9 @@ export default class App extends React.Component {
           subtitle="You can setup the colors using the theme prop"
           iconComponent={<Ionicons name="ios-thumbs-up" size={32} color="white" />}
         >
-          <AlertButton theme="info" onPress={this.handleClose}>Done</AlertButton>
-          <AlertButton theme="default" onPress={this.handleClose}>Cancel</AlertButton>
-        </Alert>
+          <SCLAlertButton theme="info" onPress={this.handleClose}>Done</SCLAlertButton>
+          <SCLAlertButton theme="default" onPress={this.handleClose}>Cancel</SCLAlertButton>
+        </SCLAlert>
       </View>
     );
   }
@@ -115,7 +115,7 @@ You can customized the look and feel of this library the way you want, but, if y
 - ```danger```
 - ```warning```
 
-## Alert
+## SCLAlert
 
 | Name | Type| Default | Description |
 | --- | --- | --- | --- |
@@ -137,7 +137,7 @@ You can customized the look and feel of this library the way you want, but, if y
 
 ### TODO
 
-## AlertButton
+## SCLAlertButton
 
 | Name | Type| Default | Description |
 | --- | --- | --- | --- |

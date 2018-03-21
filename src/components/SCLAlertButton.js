@@ -19,7 +19,7 @@ import {
   defaultThemeType
 } from '../config/types'
 
-AlertButton.propTypes = {
+SCLAlertButton.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.node
@@ -30,13 +30,13 @@ AlertButton.propTypes = {
   onPress: PropTypes.func.isRequired
 }
 
-AlertButton.defaultProps = {
+SCLAlertButton.defaultProps = {
   containerStyle: {},
   textStyle: {},
   themeType: defaultThemeType
 }
 
-function AlertButton (props) {
+function SCLAlertButton (props) {
   const childrenType = typeof props.children
 
   return (
@@ -84,4 +84,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default AlertButton
+export default SCLAlertButton

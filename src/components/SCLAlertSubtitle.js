@@ -10,18 +10,18 @@ import {
 
 import variables from '../config/variables'
 
-AlertSubtitle.propTypes = {
+SCLAlertSubtitle.propTypes = {
   subtitle: PropTypes.string.isRequired,
   subtitleContainerStyle: ViewPropTypes.style,
   subtitleStyle: Text.propTypes.style
 }
 
-AlertSubtitle.defaultProps = {
+SCLAlertSubtitle.defaultProps = {
   subtitleContainerStyle: {},
   subtitleStyle: {}
 }
 
-function AlertSubtitle (props) {
+function SCLAlertSubtitle (props) {
   return (
     <View
       style={[
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default AlertSubtitle
+export default SCLAlertSubtitle

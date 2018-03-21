@@ -1,9 +1,9 @@
 import {
-  Alert,
-  AlertButton
+  SCLAlert,
+  SCLAlertButton
 } from './src/components'
 
 export {
-  Alert,
-  AlertButton
+  SCLAlert,
+  SCLAlertButton
 }

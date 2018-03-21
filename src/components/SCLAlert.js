@@ -11,9 +11,9 @@ import {
 } from 'react-native'
 
 import {
-  AlertHeader,
-  AlertTitle,
-  AlertSubtitle
+  SCLAlertHeader,
+  SCLAlertTitle,
+  SCLAlertSubtitle
 } from '../components'
 
 import {
@@ -22,7 +22,7 @@ import {
 
 import variables from './../config/variables'
 
-class Alert extends React.Component {
+class SCLAlert extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     show: PropTypes.bool,
@@ -128,13 +128,13 @@ class Alert extends React.Component {
             ]}
           >
             <View style={styles.innerContent}>
-              <AlertHeader
+              <SCLAlertHeader
                 {...this.props}
               />
-              <AlertTitle
+              <SCLAlertTitle
                 {...this.props}
               />
-              <AlertSubtitle
+              <SCLAlertSubtitle
                 {...this.props}
               />
               <View style={styles.bodyContainer}>
@@ -178,4 +178,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Alert
+export default SCLAlert
