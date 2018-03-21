@@ -45,8 +45,7 @@ function AlertSubtitle (props) {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: variables.gutter
+    justifyContent: 'center'
   },
   subtitle: {
     textAlign: 'center',

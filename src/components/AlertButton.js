@@ -71,8 +71,8 @@ function AlertButton (props) {
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: variables.gutter / 2,
-    padding: variables.gutter,
+    marginTop: variables.gutter / 1.5,
+    padding: variables.gutter / 1.5,
     borderRadius: variables.baseBorderRadius,
     alignItems: 'center',
     justifyContent: 'center'

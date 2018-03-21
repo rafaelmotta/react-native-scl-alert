@@ -19,10 +19,18 @@ A pure react native javascript implementation of the package [https://github.com
 
 You can try on expo: https://exp.host/@rafaelmotta021/react-native-scl-alert-demo
 
-or just check the image bellow:
+or just check the images bellow:
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/rafaelmotta/react-native-scl-alert/master/demo-example.gif" height="550" />
+  <img      src="https://raw.githubusercontent.com/rafaelmotta/react-native-scl-alert/master/demo-1.jpeg" 
+    height="550" 
+  />
+  <img      src="https://raw.githubusercontent.com/rafaelmotta/react-native-scl-alert/master/demo-2.jpeg" 
+    height="550" 
+  />
+  <img      src="https://raw.githubusercontent.com/rafaelmotta/react-native-scl-alert/master/demo-3.jpeg" 
+    height="550" 
+  />
 </p>
 
 
