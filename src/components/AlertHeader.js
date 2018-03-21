@@ -3,25 +3,44 @@ import PropTypes from 'prop-types'
 
 import {
   View,
-  StyleSheet,
-  Image
+  ViewPropTypes,
+  StyleSheet
 } from 'react-native'
 
 import variables from '../config/variables'
 
-AlertHeader.propTypes = {
+import {
+  themeType,
+  defaultThemeType
+} from '../config/types'
 
+AlertHeader.propTypes = {
+  alertContainerStyles: ViewPropTypes.style,
+  alertInnerStyles: ViewPropTypes.style,
+  theme: themeType,
+  iconComponent: PropTypes.node.isRequired
+}
+
+AlertHeader.defaultProps = {
+  alertContainerStyles: {},
+  alertInnerStyles: {},
+  theme: defaultThemeType
 }
 
 function AlertHeader (props) {
   return (
-    <View style={styles.container}>
-      <View 
+    <View style={[
+      styles.container,
+      styles.alertContainerStyles
+    ]}>
+      <View
         style={[
           styles.inner,
-          { backgroundColor: variables[`${props.theme}Theme`]}
+          styles.alertInnerStyles,
+          { backgroundColor: variables[`${props.theme}Background`] }
         ]}
       >
+        {props.iconComponent}
       </View>
     </View>
   )
@@ -37,7 +56,6 @@ const styles = StyleSheet.create({
     width: variables.headerCircleSize,
     height: variables.headerCircleSize,
     borderRadius: variables.headerCircleSize,
-    backgroundColor: '#00B77A',
     borderWidth: 4,
     borderColor: variables.white,
     justifyContent: 'center',

@@ -1,4 +1,4 @@
-import { 
+import {
   scale
 } from '../helpers/scalling'
 
@@ -33,8 +33,8 @@ export default {
   /**
    * Colors
    */
-  get baseBackgroundColor() {
-    return '#FFFFFF';
+  get baseBackgroundColor () {
+    return '#FFFFFF'
   },
 
   get textColor () {
@@ -49,31 +49,86 @@ export default {
     return '#FFFFFF'
   },
 
-  /**
-   * Themes
-   */
-  get defaultTheme () {
+  get black () {
     return '#333333'
   },
 
-  get invertTheme () {
-    return '#333333'
+  get default () {
+    return '#f1f1fa'
   },
 
-  get successTheme () {
-    return '#ff3b30'
+  get inverse () {
+    return '#343a40'
   },
 
-  get infoTheme () {
-    return '#007AFF'
+  get success () {
+    return '#28a745'
   },
 
-  get dangerTheme () {
-    return '#ff3b30'
+  get info () {
+    return '#007bff'
+  },
+
+  get danger () {
+    return '#dc3545'
   },
 
   get warningTheme () {
     return '#ff3b30'
+  },
+
+  /**
+   * Themes backgrounds
+   */
+  get defaultBackground () {
+    return this.default
+  },
+
+  get inverseBackground () {
+    return this.inverse
+  },
+
+  get successBackground () {
+    return this.success
+  },
+
+  get infoBackground () {
+    return this.info
+  },
+
+  get dangerBackground () {
+    return this.danger
+  },
+
+  get warningBackground () {
+    return this.warning
+  },
+
+  /**
+   * Themes colors
+   */
+  get defaultColor () {
+    return this.black
+  },
+
+  get inverseColor () {
+    return this.white
+  },
+
+  get successColor () {
+    return this.white
+  },
+
+  get infoColor () {
+    return this.white
+  },
+
+  get dangerColor () {
+    return this.white
+  },
+
+  get warningColor () {
+    return this.black
   },
 
   get overlayBackgroundColor () {
@@ -93,11 +148,11 @@ export default {
 
   // Content
   get contentWidth () {
-    return width * 0.75
+    return width * 0.80
   },
 
   // Header circle
   get headerCircleSize () {
     return this.scale(80)
-  },
+  }
 }

@@ -46,13 +46,13 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: variables.gutter    
+    marginBottom: variables.gutter
   },
   subtitle: {
     textAlign: 'center',
-    fontSize: variables.mediumFontSize,    
+    fontSize: variables.mediumFontSize,
     color: variables.subtitleColor,
-    fontWeight: '300'    
+    fontWeight: '300'
   }
 })
 

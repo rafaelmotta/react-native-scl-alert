@@ -20,54 +20,23 @@ import {
   height
 } from '../helpers/dimensions'
 
-import {
-  themeType,
-  defaultThemeType
-} from '../config/types'
-
 import variables from './../config/variables'
 
 class Alert extends React.Component {
   static propTypes = {
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
-
     children: PropTypes.node,
-
     show: PropTypes.bool,
-
-    // Indicate if when user press in the overlay, can request to close
     cancellable: PropTypes.bool,
-
-    // User is requesting to close
     onRequestClose: PropTypes.func.isRequired,
-
-    // Animation
     slideAnimationDuration: PropTypes.number,
-
-    // Callbacks
-    // TODO:
-    beforeOpen: PropTypes.func,
-    afterOpen: PropTypes.func,
-    beforeClose: PropTypes.func,
-    afterClose: PropTypes.func,
-
-    // Styles
-    theme: themeType,
     overlayStyle: ViewPropTypes.style
   }
 
   static defaultProps = {
     children: null,
-
     show: false,
     cancellable: true,
-
-    // Animation
     slideAnimationDuration: 250,
-
-    // styles
-    theme: defaultThemeType,
     overlayStyle: {}
   }
 
@@ -89,7 +58,7 @@ class Alert extends React.Component {
   get interpolationTranslate () {
     const move = this.slideAnimation.interpolate({
       inputRange: [0, 1],
-      outputRange: [height, 0]
+      outputRange: [height, height / -3.5]
     })
 
     return [{ translateY: move }]
@@ -157,15 +126,18 @@ class Alert extends React.Component {
               styles.contentContainer,
               { transform: this.interpolationTranslate }
             ]}
-          > 
-            
+          >
             <View style={styles.innerContent}>
-              <AlertHeader 
-                theme={this.props.theme}
+              <AlertHeader
+                {...this.props}
               />
-              <AlertTitle title={this.props.title} />
-              <AlertSubtitle subtitle={this.props.subtitle} />
-              <View>
+              <AlertTitle
+                {...this.props}
+              />
+              <AlertSubtitle
+                {...this.props}
+              />
+              <View style={styles.bodyContainer}>
                 {this.props.children}
               </View>
             </View>
@@ -191,16 +163,18 @@ const styles = StyleSheet.create({
   contentContainer: {
     zIndex: 150,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   innerContent: {
     padding: variables.gutter,
     paddingTop: variables.gutter * 4,
     borderRadius: variables.baseBorderRadius,
     backgroundColor: variables.baseBackgroundColor,
-    width: variables.contentWidth,
-    height: 350,
-    marginBottom: variables.gutter * 5
+    width: variables.contentWidth
+  },
+  bodyContainer: {
+    marginTop: variables.gutter,
+    justifyContent: 'flex-end'
   }
 })
 

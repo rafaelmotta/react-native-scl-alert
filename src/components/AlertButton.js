@@ -26,7 +26,8 @@ AlertButton.propTypes = {
   ]).isRequired,
   containerStyle: ViewPropTypes.style,
   textStyle: Text.propTypes.style,
-  theme: themeType
+  theme: themeType,
+  onPress: PropTypes.func.isRequired
 }
 
 AlertButton.defaultProps = {
@@ -40,11 +41,11 @@ function AlertButton (props) {
 
   return (
     <View>
-      <Touch>
+      <Touch onPress={props.onPress}>
         <View
           style={[
             styles.container,
-            { backgroundColor: variables[`${props.theme}Theme`]},
+            { backgroundColor: variables[`${props.theme}Background`] },
             props.containerStyle
           ]}
         >
@@ -52,6 +53,7 @@ function AlertButton (props) {
             <Text
               style={[
                 styles.text,
+                { color: variables[`${props.theme}Color`] },
                 props.textStyle
               ]}
             >

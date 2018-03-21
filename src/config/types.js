@@ -8,4 +8,4 @@ export const themeType = PropTypes.oneOf([
   'warning',
   'danger'
 ])
-export const defaultThemeType =  'default'
+export const defaultThemeType = 'default'

@@ -9,7 +9,7 @@ import {
 
 Touch.propTypes = {
   activeOpacity: PropTypes.number,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 Touch.defaultProps = {

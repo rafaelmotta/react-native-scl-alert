@@ -1,26 +1,42 @@
 {
   "name": "react-native-scl-alert",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A React Native implementation of the package SCLAlertView",
+  "author": "Rafael Michels Motta <rafaelmotta021@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelmotta/react-native-scl-alert/issues"
+  },
+  "homepage": "https://github.com/rafaelmotta/react-native-scl-alert",
+  "main": "index.js",
+  "private": false,
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^23.0.0-alpha.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "eslint": "^4.19.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.4.2",
+    "jest-serializer-enzyme": "^1.0.0",
+    "react": "16.2.0",
+    "react-native-mock": "^0.3.1",
     "react-native-scripts": "1.11.1",
-    "jest-expo": "25.0.0",
     "react-test-renderer": "16.2.0"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node node_modules/jest/bin/jest.js --coverage",
+    "lint": "./node_modules/.bin/eslint . --fix; exit 0"
   },
   "dependencies": {
-    "expo": "^25.0.0",
-    "react": "16.2.0",
-    "react-native": "0.52.0"
+    "prop-types": "^15.6.1"
   }
 }
