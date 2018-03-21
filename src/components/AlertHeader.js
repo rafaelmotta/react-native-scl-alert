@@ -15,32 +15,33 @@ import {
 } from '../config/types'
 
 AlertHeader.propTypes = {
-  alertContainerStyles: ViewPropTypes.style,
-  alertInnerStyles: ViewPropTypes.style,
+  headerContainerStyles: ViewPropTypes.style,
+  headerInnerStyles: ViewPropTypes.style,
   theme: themeType,
-  iconComponent: PropTypes.node.isRequired
+  headerIconComponent: PropTypes.node
 }
 
 AlertHeader.defaultProps = {
-  alertContainerStyles: {},
-  alertInnerStyles: {},
-  theme: defaultThemeType
+  headerContainerStyles: {},
+  headerInnerStyles: {},
+  theme: defaultThemeType,
+  headerIconComponent: null
 }
 
 function AlertHeader (props) {
   return (
     <View style={[
       styles.container,
-      styles.alertContainerStyles
+      styles.headerContainerStyles
     ]}>
       <View
         style={[
           styles.inner,
-          styles.alertInnerStyles,
+          styles.headerInnerStyles,
           { backgroundColor: variables[`${props.theme}Background`] }
         ]}
       >
-        {props.iconComponent}
+        {props.headerIconComponent}
       </View>
     </View>
   )
