@@ -135,8 +135,6 @@ You can customized the look and feel of this library the way you want, but, if y
 | headerIconComponent | PropTypes.node | null | A component to render inside the header |
 | children | PropTypes.node | null | Custom content. Put here buttons and text inputs |
 
-### TODO
-
 ## SCLAlertButton
 
 | Name | Type| Default | Description |
