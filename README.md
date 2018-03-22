@@ -6,7 +6,9 @@ A pure react native javascript implementation of the package [https://github.com
 
 ## Road Map
 - [x] Documentation to customize styles
-- [ ] TextFields
+- [ ] Handle orientation 
+- [ ] Default images for header
+- [ ] Text Field Component
 - [ ] More transitions
 
 ## Features
