@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-native-scl-alert.svg)](https://badge.fury.io/js/react-native-scl-alert)
 
-A pure react native javascript implementation of the package [https://github.com/vikmeup/SCLAlertView-Swift](SCLAlertView-Swift)
+A pure react native javascript implementation of the package https://github.com/vikmeup/SCLAlertView-Swift
 
 ## Road Map
 - [x] Documentation to customize styles
