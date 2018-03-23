@@ -53,7 +53,8 @@ class SCLAlert extends React.Component {
   }
 
   /**
-   * @description
+   * @description get animation interpolation
+   * @return { Array }
    */
   get interpolationTranslate () {
     const move = this.slideAnimation.interpolate({
@@ -65,7 +66,8 @@ class SCLAlert extends React.Component {
   }
 
   /**
-   * @description
+   * @description show modal
+   * @return { Void }
    */
   show = () => {
     this._runAnimationAsync()
@@ -73,7 +75,8 @@ class SCLAlert extends React.Component {
   }
 
   /**
-   * @description
+   * @description hide modal
+   * @return { Void }
    */
   hide = async () => {
     await this._runAnimationAsync()
@@ -83,7 +86,7 @@ class SCLAlert extends React.Component {
   /**
    * @description run slide animation to show action sheet contetn
    * @param { Boolean } show - Show / Hide content
-   * @return { Void }
+   * @return { Promise }
    */
   _runAnimationAsync = () => {
     return new Promise(resolve => {
@@ -100,6 +103,10 @@ class SCLAlert extends React.Component {
     })
   }
 
+  /**
+   * @description callback after press in the overlay
+   * @return { Void }
+   */
   handleOnClose = () => {
     this.props.cancellable && this.props.onRequestClose()
   }
