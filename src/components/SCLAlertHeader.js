@@ -54,14 +54,15 @@ const styles = StyleSheet.create({
     position: 'absolute',
     zIndex: 150,
     top: 0,
-    left: (variables.contentWidth / 2) - (variables.gutter / 2)
+    left: (variables.contentWidth / 2) - (variables.gutter / 2),
+    borderRadius: variables.headerCircleSize,
+    backgroundColor: variables.white,
+    padding: 4
   },
   inner: {
     width: variables.headerCircleSize,
     height: variables.headerCircleSize,
     borderRadius: variables.headerCircleSize,
-    borderWidth: 4,
-    borderColor: variables.white,
     justifyContent: 'center',
     alignItems: 'center'
   },

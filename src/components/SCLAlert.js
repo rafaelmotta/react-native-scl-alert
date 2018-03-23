@@ -40,10 +40,14 @@ class SCLAlert extends React.Component {
     overlayStyle: {}
   }
 
-  constructor (props) {
-    super(props)
-    this.state = { show: props.show }
-    this.slideAnimation = new Animated.Value(0)
+  state = {
+    show: false
+  }
+
+  slideAnimation = new Animated.Value(0)
+
+  componentDidMount () {
+    this.props.show && this.show()
   }
 
   componentDidUpdate (prevProps, prevState) {
