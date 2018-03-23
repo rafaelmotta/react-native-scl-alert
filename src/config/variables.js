@@ -54,7 +54,7 @@ export default {
   },
 
   get default () {
-    return '#f1f1fa'
+    return '#e0e0e0'
   },
 
   get inverse () {
@@ -73,8 +73,8 @@ export default {
     return '#dc3545'
   },
 
-  get warningTheme () {
-    return '#ff3b30'
+  get warning () {
+    return '#ffc107'
   },
 
   /**

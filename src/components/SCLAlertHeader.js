@@ -4,9 +4,11 @@ import PropTypes from 'prop-types'
 import {
   View,
   ViewPropTypes,
-  StyleSheet
+  StyleSheet,
+  Image
 } from 'react-native'
 
+import images from '../config/images'
 import variables from '../config/variables'
 
 import {
@@ -30,10 +32,7 @@ SCLAlertHeader.defaultProps = {
 
 function SCLAlertHeader (props) {
   return (
-    <View style={[
-      styles.container,
-      styles.headerContainerStyles
-    ]}>
+    <View style={[styles.container, styles.headerContainerStyles]}>
       <View
         style={[
           styles.inner,
@@ -41,6 +40,9 @@ function SCLAlertHeader (props) {
           { backgroundColor: variables[`${props.theme}Background`] }
         ]}
       >
+        {!props.headerIconComponent && (
+          <Image source={{ uri: images[props.theme] }} style={styles.image} />
+        )}
         {props.headerIconComponent}
       </View>
     </View>
@@ -62,6 +64,10 @@ const styles = StyleSheet.create({
     borderColor: variables.white,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  image: {
+    height: 32,
+    width: 32
   }
 })
 

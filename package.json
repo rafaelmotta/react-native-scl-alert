@@ -1,6 +1,6 @@
 {
   "name": "react-native-scl-alert",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A React Native implementation of the package SCLAlertView",
   "author": "Rafael Michels Motta <rafaelmotta021@gmail.com>",
   "license": "MIT",
