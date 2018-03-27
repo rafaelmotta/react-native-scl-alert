@@ -47,24 +47,19 @@ or
 ## Usage
 
 ```javascript
-import React from 'react';
+import React from 'react'
 import {
   View,
   Button,
   StyleSheet
-} from 'react-native';
+} from 'react-native'
 
 import {
   SCLAlert,
   SCLAlertButton
 } from 'react-native-scl-alert'
 
-import { 
-  Ionicons
-} from '@expo/vector-icons';
-
 export default class App extends React.Component {
-
   state = {
     show: false
   }
@@ -81,19 +76,16 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Button title="Show" onPress={this.handleOpen} />
-        <SCLAlert
-          show={this.state.show}
-          onRequestClose={this.handleClose}
+        <SCLAlert
           theme="info"
-          title="Info"
-          subtitle="You can setup the colors using the theme prop"
-          headerIconComponent={<Ionicons name="ios-thumbs-up" size={32} color="white" />}
+          show={this.state.show}
+          title="Lorem"
+          subtitle="Lorem ipsum dolor"
         >
           <SCLAlertButton theme="info" onPress={this.handleClose}>Done</SCLAlertButton>
-          <SCLAlertButton theme="default" onPress={this.handleClose}>Cancel</SCLAlertButton>
         </SCLAlert>
       </View>
-    );
+    )
   }
 }
 
@@ -102,9 +94,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    justifyContent: 'center'
+  }
+})
+
 ```
 
 ## Demo
