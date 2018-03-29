@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import {
   Animated,
   Modal,
@@ -9,17 +8,8 @@ import {
   StyleSheet,
   TouchableWithoutFeedback
 } from 'react-native'
-
-import {
-  SCLAlertHeader,
-  SCLAlertTitle,
-  SCLAlertSubtitle
-} from '../components'
-
-import {
-  height
-} from '../helpers/dimensions'
-
+import { SCLAlertHeader, SCLAlertTitle, SCLAlertSubtitle } from '../components'
+import { height } from '../helpers/dimensions'
 import variables from './../config/variables'
 
 class SCLAlert extends React.Component {
@@ -46,11 +36,11 @@ class SCLAlert extends React.Component {
 
   slideAnimation = new Animated.Value(0)
 
-  componentDidMount () {
+  componentDidMount() {
     this.props.show && this.show()
   }
 
-  componentDidUpdate (prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) {
     if (this.props.show !== this.state.show) {
       return this[this.props.show ? 'show' : 'hide']()
     }
@@ -60,7 +50,7 @@ class SCLAlert extends React.Component {
    * @description get animation interpolation
    * @return { Array }
    */
-  get interpolationTranslate () {
+  get interpolationTranslate() {
     const move = this.slideAnimation.interpolate({
       inputRange: [0, 1],
       outputRange: [height, height / -5]
@@ -100,10 +90,7 @@ class SCLAlert extends React.Component {
         animation: variables.translateEasing
       }
 
-      Animated.timing(
-        this.slideAnimation,
-        options
-      ).start(resolve)
+      Animated.timing(this.slideAnimation, options).start(resolve)
     })
   }
 
@@ -115,42 +102,26 @@ class SCLAlert extends React.Component {
     this.props.cancellable && this.props.onRequestClose()
   }
 
-  render () {
+  render() {
     return (
       <Modal
         transparent
         animationType="fade"
         visible={this.state.show}
-        onRequestClose={this.props.onRequestClose}
+        onRequestClose={this.handleOnClose}
       >
         <View style={styles.inner}>
           <TouchableWithoutFeedback onPress={this.handleOnClose}>
-            <View
-              style={[
-                styles.overlay,
-                this.props.overlayStyle
-              ]}
-            />
+            <View style={[styles.overlay, this.props.overlayStyle]} />
           </TouchableWithoutFeedback>
           <Animated.View
-            style={[
-              styles.contentContainer,
-              { transform: this.interpolationTranslate }
-            ]}
+            style={[styles.contentContainer, { transform: this.interpolationTranslate }]}
           >
-            <SCLAlertHeader
-              {...this.props}
-            />
+            <SCLAlertHeader {...this.props} />
             <View style={styles.innerContent}>
-              <SCLAlertTitle
-                {...this.props}
-              />
-              <SCLAlertSubtitle
-                {...this.props}
-              />
-              <View style={styles.bodyContainer}>
-                {this.props.children}
-              </View>
+              <SCLAlertTitle {...this.props} />
+              <SCLAlertSubtitle {...this.props} />
+              <View style={styles.bodyContainer}>{this.props.children}</View>
             </View>
           </Animated.View>
         </View>

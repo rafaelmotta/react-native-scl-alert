@@ -1,26 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import {
-  View,
-  ViewPropTypes,
-  StyleSheet,
-  Text,
-  TouchableOpacity
-} from 'react-native'
-
+import { View, ViewPropTypes, StyleSheet, Text, TouchableOpacity } from 'react-native'
 import variables from '../config/variables'
-
-import {
-  themeType,
-  defaultThemeType
-} from '../config/types'
+import { themeType, defaultThemeType } from '../config/types'
 
 SCLAlertButton.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.node
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   containerStyle: ViewPropTypes.style,
   textStyle: Text.propTypes.style,
   theme: themeType,
@@ -30,10 +15,10 @@ SCLAlertButton.propTypes = {
 SCLAlertButton.defaultProps = {
   containerStyle: {},
   textStyle: {},
-  themeType: defaultThemeType
+  theme: defaultThemeType
 }
 
-function SCLAlertButton (props) {
+function SCLAlertButton(props) {
   const childrenType = typeof props.children
 
   return (
@@ -46,19 +31,11 @@ function SCLAlertButton (props) {
         ]}
       >
         {childrenType === 'string' && (
-          <Text
-            style={[
-              styles.text,
-              { color: variables[`${props.theme}Color`] },
-              props.textStyle
-            ]}
-          >
+          <Text style={[styles.text, { color: variables[`${props.theme}Color`] }, props.textStyle]}>
             {props.children}
           </Text>
         )}
-        {childrenType === 'object' && (
-          <View>{props.children}</View>
-        )}
+        {childrenType === 'object' && <View>{props.children}</View>}
       </View>
     </TouchableOpacity>
   )

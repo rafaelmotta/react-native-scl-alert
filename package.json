@@ -1,6 +1,6 @@
 {
   "name": "react-native-scl-alert",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "A React Native implementation of the package SCLAlertView",
   "author": "Rafael Michels Motta <rafaelmotta021@gmail.com>",
   "license": "MIT",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "babel-jest": "^23.0.0-alpha.0",
+    "babel-preset-expo": "^4.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
@@ -24,19 +25,38 @@
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-react-native": "^3.2.1",
     "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
     "jest": "^22.4.2",
     "jest-serializer-enzyme": "^1.0.0",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
     "react": "16.2.0",
-    "react-native-mock": "^0.3.1",
+    "react-dom": "^16.2.0",
+    "react-native": "^0.54.3",
     "react-native-scripts": "1.11.1",
     "react-test-renderer": "16.2.0"
   },
   "scripts": {
-    "test": "node node_modules/jest/bin/jest.js --watch",
+    "test": "node node_modules/jest/bin/jest.js",
+    "test:watch": "node node_modules/jest/bin/jest.js --watch",
     "test:coverage": "node node_modules/jest/bin/jest.js --coverage",
-    "lint": "./node_modules/.bin/eslint . --fix; exit 0"
+    "lint": "./node_modules/.bin/eslint . --fix; exit 0",
+    "pretty": "prettier --semi false --print-width 100 --single-quote --trailing-comma none --write \"src/**/*.js\"",
+    "precommit": "lint-staged && yarn test"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn pretty",
+      "git add"
+    ]
   },
   "dependencies": {
     "prop-types": "^15.6.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFiles": [
+      "./testenv.js"
+    ]
   }
 }
