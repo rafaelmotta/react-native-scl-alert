@@ -1,13 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import {
-  View,
-  ViewPropTypes,
-  StyleSheet,
-  Text
-} from 'react-native'
-
+import { View, ViewPropTypes, StyleSheet, Text } from 'react-native'
 import variables from '../config/variables'
 
 SCLAlertSubtitle.propTypes = {
@@ -21,7 +14,7 @@ SCLAlertSubtitle.defaultProps = {
   subtitleStyle: {}
 }
 
-function SCLAlertSubtitle (props) {
+function SCLAlertSubtitle(props) {
   return (
     <View style={[styles.container, props.subtitleContainerStyle]}>
       <Text numberOfLines={2} style={[styles.subtitle, props.subtitleStyle]}>

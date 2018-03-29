@@ -1,10 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import { View, ViewPropTypes, StyleSheet, Text, TouchableOpacity } from 'react-native'
-
 import variables from '../config/variables'
-
 import { themeType, defaultThemeType } from '../config/types'
 
 SCLAlertButton.propTypes = {
@@ -12,13 +9,13 @@ SCLAlertButton.propTypes = {
   containerStyle: ViewPropTypes.style,
   textStyle: Text.propTypes.style,
   theme: themeType,
-  onPress: PropTypes.func.isRequired,
+  onPress: PropTypes.func.isRequired
 }
 
 SCLAlertButton.defaultProps = {
   containerStyle: {},
   textStyle: {},
-  theme: defaultThemeType,
+  theme: defaultThemeType
 }
 
 function SCLAlertButton(props) {
@@ -30,7 +27,7 @@ function SCLAlertButton(props) {
         style={[
           styles.container,
           { backgroundColor: variables[`${props.theme}Background`] },
-          props.containerStyle,
+          props.containerStyle
         ]}
       >
         {childrenType === 'string' && (
@@ -50,13 +47,13 @@ const styles = StyleSheet.create({
     padding: variables.gutter / 1.5,
     borderRadius: variables.baseBorderRadius,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   text: {
     fontSize: variables.baseFontSize,
     color: variables.white,
-    fontWeight: '700',
-  },
+    fontWeight: '700'
+  }
 })
 
 export default SCLAlertButton

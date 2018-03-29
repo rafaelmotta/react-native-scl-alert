@@ -1,19 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import {
   Animated,
   Modal,
   View,
   ViewPropTypes,
   StyleSheet,
-  TouchableWithoutFeedback,
+  TouchableWithoutFeedback
 } from 'react-native'
-
 import { SCLAlertHeader, SCLAlertTitle, SCLAlertSubtitle } from '../components'
-
 import { height } from '../helpers/dimensions'
-
 import variables from './../config/variables'
 
 class SCLAlert extends React.Component {
@@ -23,7 +19,7 @@ class SCLAlert extends React.Component {
     cancellable: PropTypes.bool,
     onRequestClose: PropTypes.func.isRequired,
     slideAnimationDuration: PropTypes.number,
-    overlayStyle: ViewPropTypes.style,
+    overlayStyle: ViewPropTypes.style
   }
 
   static defaultProps = {
@@ -31,11 +27,11 @@ class SCLAlert extends React.Component {
     show: false,
     cancellable: true,
     slideAnimationDuration: 250,
-    overlayStyle: {},
+    overlayStyle: {}
   }
 
   state = {
-    show: false,
+    show: false
   }
 
   slideAnimation = new Animated.Value(0)
@@ -57,7 +53,7 @@ class SCLAlert extends React.Component {
   get interpolationTranslate() {
     const move = this.slideAnimation.interpolate({
       inputRange: [0, 1],
-      outputRange: [height, height / -5],
+      outputRange: [height, height / -5]
     })
 
     return [{ translateY: move }]
@@ -91,7 +87,7 @@ class SCLAlert extends React.Component {
       const options = {
         toValue: this.state.show ? 0 : 1,
         duration: this.props.slideAnimationDuration,
-        animation: variables.translateEasing,
+        animation: variables.translateEasing
       }
 
       Animated.timing(this.slideAnimation, options).start(resolve)
@@ -138,32 +134,32 @@ const styles = StyleSheet.create({
   inner: {
     ...StyleSheet.absoluteFillObject,
     justifyContent: 'flex-end',
-    padding: variables.containerPadding,
+    padding: variables.containerPadding
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: variables.overlayBackgroundColor,
     justifyContent: 'center',
-    zIndex: 100,
+    zIndex: 100
   },
   contentContainer: {
     zIndex: 150,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 50,
-    position: 'relative',
+    position: 'relative'
   },
   innerContent: {
     padding: variables.gutter,
     paddingTop: variables.gutter * 4,
     borderRadius: variables.baseBorderRadius,
     backgroundColor: variables.baseBackgroundColor,
-    width: variables.contentWidth,
+    width: variables.contentWidth
   },
   bodyContainer: {
     marginTop: variables.gutter,
-    justifyContent: 'flex-end',
-  },
+    justifyContent: 'flex-end'
+  }
 })
 
 export default SCLAlert

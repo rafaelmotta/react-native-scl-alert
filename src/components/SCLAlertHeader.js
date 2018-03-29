@@ -1,20 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import {
-  View,
-  ViewPropTypes,
-  StyleSheet,
-  Image
-} from 'react-native'
-
+import { View, ViewPropTypes, StyleSheet, Image } from 'react-native'
 import images from '../config/images'
 import variables from '../config/variables'
-
-import {
-  themeType,
-  defaultThemeType
-} from '../config/types'
+import { themeType, defaultThemeType } from '../config/types'
 
 SCLAlertHeader.propTypes = {
   headerContainerStyles: ViewPropTypes.style,
@@ -30,7 +19,7 @@ SCLAlertHeader.defaultProps = {
   headerIconComponent: null
 }
 
-function SCLAlertHeader (props) {
+function SCLAlertHeader(props) {
   return (
     <View style={[styles.container, styles.headerContainerStyles]}>
       <View
@@ -54,7 +43,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     zIndex: 150,
     top: 0,
-    left: (variables.contentWidth / 2) - (variables.gutter / 2),
+    left: variables.contentWidth / 2 - variables.gutter / 2,
     borderRadius: variables.headerCircleSize,
     backgroundColor: variables.white,
     padding: 4

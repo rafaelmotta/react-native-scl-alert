@@ -37,10 +37,11 @@
     "react-test-renderer": "16.2.0"
   },
   "scripts": {
-    "test": "node node_modules/jest/bin/jest.js --watch",
+    "test": "node node_modules/jest/bin/jest.js",
+    "test:watch": "node node_modules/jest/bin/jest.js --watch",
     "test:coverage": "node node_modules/jest/bin/jest.js --coverage",
     "lint": "./node_modules/.bin/eslint . --fix; exit 0",
-    "pretty": "prettier --semi false --print-width 100 --single-quote --trailing-comma all --write \"src/**/*.js\"",
+    "pretty": "prettier --semi false --print-width 100 --single-quote --trailing-comma none --write \"src/**/*.js\"",
     "precommit": "lint-staged && yarn test"
   },
   "lint-staged": {
