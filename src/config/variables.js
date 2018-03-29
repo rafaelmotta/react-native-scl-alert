@@ -1,5 +1,4 @@
 import { scale } from '../helpers/scalling'
-
 import { width } from '../helpers/dimensions'
 
 export default {
