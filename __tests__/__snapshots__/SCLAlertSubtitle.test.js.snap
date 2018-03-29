@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SCLAlertSubtitle /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SCLAlertSubtitle
+    subtitle="Lorem"
+    subtitleContainerStyle={
+      Object {
+        "marginTop": 10,
+      }
+    }
+    subtitleStyle={
+      Object {
+        "fontSize": 14,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        numberOfLines={2}
+        style={
+          Array [
+            Object {
+              "color": "#555555",
+              "fontSize": 34.285714285714285,
+              "fontWeight": "300",
+              "textAlign": "center",
+            },
+            Object {
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        Lorem
+      </Text>,
+      "style": Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        Object {
+          "marginTop": 10,
+        },
+      ],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "accessible": true,
+        "allowFontScaling": true,
+        "children": "Lorem",
+        "ellipsizeMode": "tail",
+        "numberOfLines": 2,
+        "style": Array [
+          Object {
+            "color": "#555555",
+            "fontSize": 34.285714285714285,
+            "fontWeight": "300",
+            "textAlign": "center",
+          },
+          Object {
+            "fontSize": 14,
+          },
+        ],
+      },
+      "ref": null,
+      "rendered": "Lorem",
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          numberOfLines={2}
+          style={
+            Array [
+              Object {
+                "color": "#555555",
+                "fontSize": 34.285714285714285,
+                "fontWeight": "300",
+                "textAlign": "center",
+              },
+              Object {
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Lorem
+        </Text>,
+        "style": Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Object {
+            "marginTop": 10,
+          },
+        ],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": "Lorem",
+          "ellipsizeMode": "tail",
+          "numberOfLines": 2,
+          "style": Array [
+            Object {
+              "color": "#555555",
+              "fontSize": 34.285714285714285,
+              "fontWeight": "300",
+              "textAlign": "center",
+            },
+            Object {
+              "fontSize": 14,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": "Lorem",
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

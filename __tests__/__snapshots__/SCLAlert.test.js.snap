@@ -1,0 +1,1043 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SCLAlert /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SCLAlert
+    cancellable={true}
+    onRequestClose={[MockFunction]}
+    overlayStyle={Object {}}
+    show={false}
+    slideAnimationDuration={250}
+    subtitle="Lorem ipsum"
+    title="Hello"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "animationType": "fade",
+      "children": <View
+        style={
+          Object {
+            "bottom": 0,
+            "justifyContent": "flex-end",
+            "left": 0,
+            "padding": undefined,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <TouchableWithoutFeedback
+          onPress={[Function]}
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "rgba(0, 0, 0, 0.4)",
+                  "bottom": 0,
+                  "justifyContent": "center",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "zIndex": 100,
+                },
+                Object {},
+              ]
+            }
+          />
+        </TouchableWithoutFeedback>
+        <AnimatedComponent
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+                "padding": 50,
+                "position": "relative",
+                "zIndex": 150,
+              },
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateY": 1334,
+                  },
+                ],
+              },
+            ]
+          }
+        >
+          <SCLAlertHeader
+            cancellable={true}
+            headerContainerStyles={Object {}}
+            headerIconComponent={null}
+            headerInnerStyles={Object {}}
+            onRequestClose={[MockFunction]}
+            overlayStyle={Object {}}
+            show={false}
+            slideAnimationDuration={250}
+            subtitle="Lorem ipsum"
+            theme="default"
+            title="Hello"
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": 8,
+                "padding": 32.14285714285714,
+                "paddingTop": 128.57142857142856,
+                "width": 600,
+              }
+            }
+          >
+            <SCLAlertTitle
+              cancellable={true}
+              onRequestClose={[MockFunction]}
+              overlayStyle={Object {}}
+              show={false}
+              slideAnimationDuration={250}
+              subtitle="Lorem ipsum"
+              title="Hello"
+              titleContainerStyle={Object {}}
+              titleStyle={Object {}}
+            />
+            <SCLAlertSubtitle
+              cancellable={true}
+              onRequestClose={[MockFunction]}
+              overlayStyle={Object {}}
+              show={false}
+              slideAnimationDuration={250}
+              subtitle="Lorem ipsum"
+              subtitleContainerStyle={Object {}}
+              subtitleStyle={Object {}}
+              title="Hello"
+            />
+            <View
+              style={
+                Object {
+                  "justifyContent": "flex-end",
+                  "marginTop": 32.14285714285714,
+                }
+              }
+            />
+          </View>
+        </AnimatedComponent>
+      </View>,
+      "hardwareAccelerated": false,
+      "onRequestClose": [Function],
+      "transparent": true,
+      "visible": false,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <TouchableWithoutFeedback
+            onPress={[Function]}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "rgba(0, 0, 0, 0.4)",
+                    "bottom": 0,
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "zIndex": 100,
+                  },
+                  Object {},
+                ]
+              }
+            />
+          </TouchableWithoutFeedback>,
+          <AnimatedComponent
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "padding": 50,
+                  "position": "relative",
+                  "zIndex": 150,
+                },
+                Object {
+                  "transform": Array [
+                    Object {
+                      "translateY": 1334,
+                    },
+                  ],
+                },
+              ]
+            }
+          >
+            <SCLAlertHeader
+              cancellable={true}
+              headerContainerStyles={Object {}}
+              headerIconComponent={null}
+              headerInnerStyles={Object {}}
+              onRequestClose={[MockFunction]}
+              overlayStyle={Object {}}
+              show={false}
+              slideAnimationDuration={250}
+              subtitle="Lorem ipsum"
+              theme="default"
+              title="Hello"
+            />
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#FFFFFF",
+                  "borderRadius": 8,
+                  "padding": 32.14285714285714,
+                  "paddingTop": 128.57142857142856,
+                  "width": 600,
+                }
+              }
+            >
+              <SCLAlertTitle
+                cancellable={true}
+                onRequestClose={[MockFunction]}
+                overlayStyle={Object {}}
+                show={false}
+                slideAnimationDuration={250}
+                subtitle="Lorem ipsum"
+                title="Hello"
+                titleContainerStyle={Object {}}
+                titleStyle={Object {}}
+              />
+              <SCLAlertSubtitle
+                cancellable={true}
+                onRequestClose={[MockFunction]}
+                overlayStyle={Object {}}
+                show={false}
+                slideAnimationDuration={250}
+                subtitle="Lorem ipsum"
+                subtitleContainerStyle={Object {}}
+                subtitleStyle={Object {}}
+                title="Hello"
+              />
+              <View
+                style={
+                  Object {
+                    "justifyContent": "flex-end",
+                    "marginTop": 32.14285714285714,
+                  }
+                }
+              />
+            </View>
+          </AnimatedComponent>,
+        ],
+        "style": Object {
+          "bottom": 0,
+          "justifyContent": "flex-end",
+          "left": 0,
+          "padding": undefined,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <View
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "rgba(0, 0, 0, 0.4)",
+                    "bottom": 0,
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "zIndex": 100,
+                  },
+                  Object {},
+                ]
+              }
+            />,
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "style": Array [
+                Object {
+                  "backgroundColor": "rgba(0, 0, 0, 0.4)",
+                  "bottom": 0,
+                  "justifyContent": "center",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "zIndex": 100,
+                },
+                Object {},
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <SCLAlertHeader
+                cancellable={true}
+                headerContainerStyles={Object {}}
+                headerIconComponent={null}
+                headerInnerStyles={Object {}}
+                onRequestClose={[MockFunction]}
+                overlayStyle={Object {}}
+                show={false}
+                slideAnimationDuration={250}
+                subtitle="Lorem ipsum"
+                theme="default"
+                title="Hello"
+              />,
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 8,
+                    "padding": 32.14285714285714,
+                    "paddingTop": 128.57142857142856,
+                    "width": 600,
+                  }
+                }
+              >
+                <SCLAlertTitle
+                  cancellable={true}
+                  onRequestClose={[MockFunction]}
+                  overlayStyle={Object {}}
+                  show={false}
+                  slideAnimationDuration={250}
+                  subtitle="Lorem ipsum"
+                  title="Hello"
+                  titleContainerStyle={Object {}}
+                  titleStyle={Object {}}
+                />
+                <SCLAlertSubtitle
+                  cancellable={true}
+                  onRequestClose={[MockFunction]}
+                  overlayStyle={Object {}}
+                  show={false}
+                  slideAnimationDuration={250}
+                  subtitle="Lorem ipsum"
+                  subtitleContainerStyle={Object {}}
+                  subtitleStyle={Object {}}
+                  title="Hello"
+                />
+                <View
+                  style={
+                    Object {
+                      "justifyContent": "flex-end",
+                      "marginTop": 32.14285714285714,
+                    }
+                  }
+                />
+              </View>,
+            ],
+            "style": Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+                "padding": 50,
+                "position": "relative",
+                "zIndex": 150,
+              },
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateY": 1334,
+                  },
+                ],
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "cancellable": true,
+                "children": null,
+                "headerContainerStyles": Object {},
+                "headerIconComponent": null,
+                "headerInnerStyles": Object {},
+                "onRequestClose": [MockFunction],
+                "overlayStyle": Object {},
+                "show": false,
+                "slideAnimationDuration": 250,
+                "subtitle": "Lorem ipsum",
+                "theme": "default",
+                "title": "Hello",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <SCLAlertTitle
+                    cancellable={true}
+                    onRequestClose={[MockFunction]}
+                    overlayStyle={Object {}}
+                    show={false}
+                    slideAnimationDuration={250}
+                    subtitle="Lorem ipsum"
+                    title="Hello"
+                    titleContainerStyle={Object {}}
+                    titleStyle={Object {}}
+                  />,
+                  <SCLAlertSubtitle
+                    cancellable={true}
+                    onRequestClose={[MockFunction]}
+                    overlayStyle={Object {}}
+                    show={false}
+                    slideAnimationDuration={250}
+                    subtitle="Lorem ipsum"
+                    subtitleContainerStyle={Object {}}
+                    subtitleStyle={Object {}}
+                    title="Hello"
+                  />,
+                  <View
+                    style={
+                      Object {
+                        "justifyContent": "flex-end",
+                        "marginTop": 32.14285714285714,
+                      }
+                    }
+                  />,
+                ],
+                "style": Object {
+                  "backgroundColor": "#FFFFFF",
+                  "borderRadius": 8,
+                  "padding": 32.14285714285714,
+                  "paddingTop": 128.57142857142856,
+                  "width": 600,
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "cancellable": true,
+                    "children": null,
+                    "onRequestClose": [MockFunction],
+                    "overlayStyle": Object {},
+                    "show": false,
+                    "slideAnimationDuration": 250,
+                    "subtitle": "Lorem ipsum",
+                    "title": "Hello",
+                    "titleContainerStyle": Object {},
+                    "titleStyle": Object {},
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "cancellable": true,
+                    "children": null,
+                    "onRequestClose": [MockFunction],
+                    "overlayStyle": Object {},
+                    "show": false,
+                    "slideAnimationDuration": 250,
+                    "subtitle": "Lorem ipsum",
+                    "subtitleContainerStyle": Object {},
+                    "subtitleStyle": Object {},
+                    "title": "Hello",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": null,
+                    "style": Object {
+                      "justifyContent": "flex-end",
+                      "marginTop": 32.14285714285714,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animationType": "fade",
+        "children": <View
+          style={
+            Object {
+              "bottom": 0,
+              "justifyContent": "flex-end",
+              "left": 0,
+              "padding": undefined,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          <TouchableWithoutFeedback
+            onPress={[Function]}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "rgba(0, 0, 0, 0.4)",
+                    "bottom": 0,
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "zIndex": 100,
+                  },
+                  Object {},
+                ]
+              }
+            />
+          </TouchableWithoutFeedback>
+          <AnimatedComponent
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "padding": 50,
+                  "position": "relative",
+                  "zIndex": 150,
+                },
+                Object {
+                  "transform": Array [
+                    Object {
+                      "translateY": 1334,
+                    },
+                  ],
+                },
+              ]
+            }
+          >
+            <SCLAlertHeader
+              cancellable={true}
+              headerContainerStyles={Object {}}
+              headerIconComponent={null}
+              headerInnerStyles={Object {}}
+              onRequestClose={[MockFunction]}
+              overlayStyle={Object {}}
+              show={false}
+              slideAnimationDuration={250}
+              subtitle="Lorem ipsum"
+              theme="default"
+              title="Hello"
+            />
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#FFFFFF",
+                  "borderRadius": 8,
+                  "padding": 32.14285714285714,
+                  "paddingTop": 128.57142857142856,
+                  "width": 600,
+                }
+              }
+            >
+              <SCLAlertTitle
+                cancellable={true}
+                onRequestClose={[MockFunction]}
+                overlayStyle={Object {}}
+                show={false}
+                slideAnimationDuration={250}
+                subtitle="Lorem ipsum"
+                title="Hello"
+                titleContainerStyle={Object {}}
+                titleStyle={Object {}}
+              />
+              <SCLAlertSubtitle
+                cancellable={true}
+                onRequestClose={[MockFunction]}
+                overlayStyle={Object {}}
+                show={false}
+                slideAnimationDuration={250}
+                subtitle="Lorem ipsum"
+                subtitleContainerStyle={Object {}}
+                subtitleStyle={Object {}}
+                title="Hello"
+              />
+              <View
+                style={
+                  Object {
+                    "justifyContent": "flex-end",
+                    "marginTop": 32.14285714285714,
+                  }
+                }
+              />
+            </View>
+          </AnimatedComponent>
+        </View>,
+        "hardwareAccelerated": false,
+        "onRequestClose": [Function],
+        "transparent": true,
+        "visible": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <TouchableWithoutFeedback
+              onPress={[Function]}
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "rgba(0, 0, 0, 0.4)",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "zIndex": 100,
+                    },
+                    Object {},
+                  ]
+                }
+              />
+            </TouchableWithoutFeedback>,
+            <AnimatedComponent
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "padding": 50,
+                    "position": "relative",
+                    "zIndex": 150,
+                  },
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "translateY": 1334,
+                      },
+                    ],
+                  },
+                ]
+              }
+            >
+              <SCLAlertHeader
+                cancellable={true}
+                headerContainerStyles={Object {}}
+                headerIconComponent={null}
+                headerInnerStyles={Object {}}
+                onRequestClose={[MockFunction]}
+                overlayStyle={Object {}}
+                show={false}
+                slideAnimationDuration={250}
+                subtitle="Lorem ipsum"
+                theme="default"
+                title="Hello"
+              />
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 8,
+                    "padding": 32.14285714285714,
+                    "paddingTop": 128.57142857142856,
+                    "width": 600,
+                  }
+                }
+              >
+                <SCLAlertTitle
+                  cancellable={true}
+                  onRequestClose={[MockFunction]}
+                  overlayStyle={Object {}}
+                  show={false}
+                  slideAnimationDuration={250}
+                  subtitle="Lorem ipsum"
+                  title="Hello"
+                  titleContainerStyle={Object {}}
+                  titleStyle={Object {}}
+                />
+                <SCLAlertSubtitle
+                  cancellable={true}
+                  onRequestClose={[MockFunction]}
+                  overlayStyle={Object {}}
+                  show={false}
+                  slideAnimationDuration={250}
+                  subtitle="Lorem ipsum"
+                  subtitleContainerStyle={Object {}}
+                  subtitleStyle={Object {}}
+                  title="Hello"
+                />
+                <View
+                  style={
+                    Object {
+                      "justifyContent": "flex-end",
+                      "marginTop": 32.14285714285714,
+                    }
+                  }
+                />
+              </View>
+            </AnimatedComponent>,
+          ],
+          "style": Object {
+            "bottom": 0,
+            "justifyContent": "flex-end",
+            "left": 0,
+            "padding": undefined,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <View
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "rgba(0, 0, 0, 0.4)",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "zIndex": 100,
+                    },
+                    Object {},
+                  ]
+                }
+              />,
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "style": Array [
+                  Object {
+                    "backgroundColor": "rgba(0, 0, 0, 0.4)",
+                    "bottom": 0,
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "zIndex": 100,
+                  },
+                  Object {},
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <SCLAlertHeader
+                  cancellable={true}
+                  headerContainerStyles={Object {}}
+                  headerIconComponent={null}
+                  headerInnerStyles={Object {}}
+                  onRequestClose={[MockFunction]}
+                  overlayStyle={Object {}}
+                  show={false}
+                  slideAnimationDuration={250}
+                  subtitle="Lorem ipsum"
+                  theme="default"
+                  title="Hello"
+                />,
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 8,
+                      "padding": 32.14285714285714,
+                      "paddingTop": 128.57142857142856,
+                      "width": 600,
+                    }
+                  }
+                >
+                  <SCLAlertTitle
+                    cancellable={true}
+                    onRequestClose={[MockFunction]}
+                    overlayStyle={Object {}}
+                    show={false}
+                    slideAnimationDuration={250}
+                    subtitle="Lorem ipsum"
+                    title="Hello"
+                    titleContainerStyle={Object {}}
+                    titleStyle={Object {}}
+                  />
+                  <SCLAlertSubtitle
+                    cancellable={true}
+                    onRequestClose={[MockFunction]}
+                    overlayStyle={Object {}}
+                    show={false}
+                    slideAnimationDuration={250}
+                    subtitle="Lorem ipsum"
+                    subtitleContainerStyle={Object {}}
+                    subtitleStyle={Object {}}
+                    title="Hello"
+                  />
+                  <View
+                    style={
+                      Object {
+                        "justifyContent": "flex-end",
+                        "marginTop": 32.14285714285714,
+                      }
+                    }
+                  />
+                </View>,
+              ],
+              "style": Array [
+                Object {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "padding": 50,
+                  "position": "relative",
+                  "zIndex": 150,
+                },
+                Object {
+                  "transform": Array [
+                    Object {
+                      "translateY": 1334,
+                    },
+                  ],
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "cancellable": true,
+                  "children": null,
+                  "headerContainerStyles": Object {},
+                  "headerIconComponent": null,
+                  "headerInnerStyles": Object {},
+                  "onRequestClose": [MockFunction],
+                  "overlayStyle": Object {},
+                  "show": false,
+                  "slideAnimationDuration": 250,
+                  "subtitle": "Lorem ipsum",
+                  "theme": "default",
+                  "title": "Hello",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <SCLAlertTitle
+                      cancellable={true}
+                      onRequestClose={[MockFunction]}
+                      overlayStyle={Object {}}
+                      show={false}
+                      slideAnimationDuration={250}
+                      subtitle="Lorem ipsum"
+                      title="Hello"
+                      titleContainerStyle={Object {}}
+                      titleStyle={Object {}}
+                    />,
+                    <SCLAlertSubtitle
+                      cancellable={true}
+                      onRequestClose={[MockFunction]}
+                      overlayStyle={Object {}}
+                      show={false}
+                      slideAnimationDuration={250}
+                      subtitle="Lorem ipsum"
+                      subtitleContainerStyle={Object {}}
+                      subtitleStyle={Object {}}
+                      title="Hello"
+                    />,
+                    <View
+                      style={
+                        Object {
+                          "justifyContent": "flex-end",
+                          "marginTop": 32.14285714285714,
+                        }
+                      }
+                    />,
+                  ],
+                  "style": Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 8,
+                    "padding": 32.14285714285714,
+                    "paddingTop": 128.57142857142856,
+                    "width": 600,
+                  },
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "cancellable": true,
+                      "children": null,
+                      "onRequestClose": [MockFunction],
+                      "overlayStyle": Object {},
+                      "show": false,
+                      "slideAnimationDuration": 250,
+                      "subtitle": "Lorem ipsum",
+                      "title": "Hello",
+                      "titleContainerStyle": Object {},
+                      "titleStyle": Object {},
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "cancellable": true,
+                      "children": null,
+                      "onRequestClose": [MockFunction],
+                      "overlayStyle": Object {},
+                      "show": false,
+                      "slideAnimationDuration": 250,
+                      "subtitle": "Lorem ipsum",
+                      "subtitleContainerStyle": Object {},
+                      "subtitleStyle": Object {},
+                      "title": "Hello",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": null,
+                      "style": Object {
+                        "justifyContent": "flex-end",
+                        "marginTop": 32.14285714285714,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
