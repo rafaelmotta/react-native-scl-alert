@@ -21,11 +21,11 @@ SCLAlertHeader.defaultProps = {
 
 function SCLAlertHeader(props) {
   return (
-    <View style={[styles.container, styles.headerContainerStyles]}>
+    <View style={[styles.container, props.headerContainerStyles]}>
       <View
         style={[
           styles.inner,
-          styles.headerInnerStyles,
+          props.headerInnerStyles,
           { backgroundColor: variables[`${props.theme}Background`] }
         ]}
       >
