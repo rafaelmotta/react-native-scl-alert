@@ -17,7 +17,7 @@ SCLAlertTitle.defaultProps = {
 function SCLAlertTitle(props) {
   return (
     <View style={[styles.container, props.titleContainerStyle]}>
-      <Text numberOfLines={1} style={[styles.text, props.titleStyle]}>
+      <Text  style={[styles.text, props.titleStyle]}>
         {props.title}
       </Text>
     </View>
