@@ -19,7 +19,8 @@ class SCLAlert extends React.Component {
     cancellable: PropTypes.bool,
     onRequestClose: PropTypes.func.isRequired,
     slideAnimationDuration: PropTypes.number,
-    overlayStyle: ViewPropTypes.style
+    overlayStyle: ViewPropTypes.style,
+    useNativeDriver: PropTypes.bool
   }
 
   static defaultProps = {
@@ -27,7 +28,8 @@ class SCLAlert extends React.Component {
     show: false,
     cancellable: true,
     slideAnimationDuration: 250,
-    overlayStyle: {}
+    overlayStyle: {},
+    useNativeDriver: true
   }
 
   state = {
@@ -87,7 +89,8 @@ class SCLAlert extends React.Component {
       const options = {
         toValue: this.state.show ? 0 : 1,
         duration: this.props.slideAnimationDuration,
-        animation: variables.translateEasing
+        animation: variables.translateEasing,
+        useNativeDriver: this.props.useNativeDriver,
       }
 
       Animated.timing(this.slideAnimation, options).start(resolve)
