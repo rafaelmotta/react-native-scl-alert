@@ -19,7 +19,8 @@ class SCLAlert extends React.Component {
     cancellable: PropTypes.bool,
     onRequestClose: PropTypes.func.isRequired,
     slideAnimationDuration: PropTypes.number,
-    overlayStyle: ViewPropTypes.style
+    overlayStyle: ViewPropTypes.style,
+    testID: PropTypes.string
   }
 
   static defaultProps = {
@@ -105,6 +106,7 @@ class SCLAlert extends React.Component {
   render() {
     return (
       <Modal
+        testID={this.props.testID}
         transparent
         animationType="fade"
         visible={this.state.show}
